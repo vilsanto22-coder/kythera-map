@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7ad19df14c040bbd83bf509d0a914825 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7ad19df14c040bbd83bf509d0a914825" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7ad19df14c040bbd83bf509d0a914825 = L.map(
+                "map_7ad19df14c040bbd83bf509d0a914825",
+                {
+                    center: [36.275555555555556, 23.015],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_db1f4381ff5c80c59481260bbbbbcc30 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {"attribution": "Esri", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var circle_2c508ad3806c7a5bf3f085fd0b5e6ead = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_77f7d924ded135e26fc30bc08c8d711a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_930e75be157fad888b105a725748d5b4 = $(`<div id="html_930e75be157fad888b105a725748d5b4" style="width: 100.0%; height: 100.0%;">1 km</div>`)[0];
+            popup_77f7d924ded135e26fc30bc08c8d711a.setContent(html_930e75be157fad888b105a725748d5b4);
+        
+
+        circle_2c508ad3806c7a5bf3f085fd0b5e6ead.bindPopup(popup_77f7d924ded135e26fc30bc08c8d711a)
+        ;
+
+        
+    
+    
+            var circle_0d315cb15bd71e1835352bb0ae56be31 = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_0b6fd21e2848940ce15e5b25d28861d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03de441730cd563ebd2f9feba6867422 = $(`<div id="html_03de441730cd563ebd2f9feba6867422" style="width: 100.0%; height: 100.0%;">2 km</div>`)[0];
+            popup_0b6fd21e2848940ce15e5b25d28861d3.setContent(html_03de441730cd563ebd2f9feba6867422);
+        
+
+        circle_0d315cb15bd71e1835352bb0ae56be31.bindPopup(popup_0b6fd21e2848940ce15e5b25d28861d3)
+        ;
+
+        
+    
+    
+            var circle_343efe05c0235722eddd67edf139164e = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_f6b176af9fb168245df2be700e9edafd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d37a309f18735d1815072c9892810aa5 = $(`<div id="html_d37a309f18735d1815072c9892810aa5" style="width: 100.0%; height: 100.0%;">3 km</div>`)[0];
+            popup_f6b176af9fb168245df2be700e9edafd.setContent(html_d37a309f18735d1815072c9892810aa5);
+        
+
+        circle_343efe05c0235722eddd67edf139164e.bindPopup(popup_f6b176af9fb168245df2be700e9edafd)
+        ;
+
+        
+    
+    
+            var circle_d0c965fda322b6c414dcb6fcdbc8c643 = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_2df6822447161ad358e8721d8195374d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f4ba7ab1b8e99beb24d6b9bda66ff937 = $(`<div id="html_f4ba7ab1b8e99beb24d6b9bda66ff937" style="width: 100.0%; height: 100.0%;">4 km</div>`)[0];
+            popup_2df6822447161ad358e8721d8195374d.setContent(html_f4ba7ab1b8e99beb24d6b9bda66ff937);
+        
+
+        circle_d0c965fda322b6c414dcb6fcdbc8c643.bindPopup(popup_2df6822447161ad358e8721d8195374d)
+        ;
+
+        
+    
+    
+            var circle_2b380966ec96e2150c4ea0cdb8bfb463 = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_469679587ef9eaf70a3acf3b6ceb6d82 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_13d36233fc427fc1a03c499e04fa6cea = $(`<div id="html_13d36233fc427fc1a03c499e04fa6cea" style="width: 100.0%; height: 100.0%;">5 km</div>`)[0];
+            popup_469679587ef9eaf70a3acf3b6ceb6d82.setContent(html_13d36233fc427fc1a03c499e04fa6cea);
+        
+
+        circle_2b380966ec96e2150c4ea0cdb8bfb463.bindPopup(popup_469679587ef9eaf70a3acf3b6ceb6d82)
+        ;
+
+        
+    
+    
+            var circle_32195c7562a9471f728a9b5d2b6ba1ca = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_caa84e95ebc4a5e26eab2a57d57c837f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fbba925e9be0027ee8faf60fa50eeab5 = $(`<div id="html_fbba925e9be0027ee8faf60fa50eeab5" style="width: 100.0%; height: 100.0%;">6 km</div>`)[0];
+            popup_caa84e95ebc4a5e26eab2a57d57c837f.setContent(html_fbba925e9be0027ee8faf60fa50eeab5);
+        
+
+        circle_32195c7562a9471f728a9b5d2b6ba1ca.bindPopup(popup_caa84e95ebc4a5e26eab2a57d57c837f)
+        ;
+
+        
+    
+    
+            var circle_8bc6019bfd71809443d84d043992e632 = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_e1069ae7ad3c7159d4e2b93f5ec668ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c07b251f6cd7d0ff2d7cf2dcfb976411 = $(`<div id="html_c07b251f6cd7d0ff2d7cf2dcfb976411" style="width: 100.0%; height: 100.0%;">7 km</div>`)[0];
+            popup_e1069ae7ad3c7159d4e2b93f5ec668ce.setContent(html_c07b251f6cd7d0ff2d7cf2dcfb976411);
+        
+
+        circle_8bc6019bfd71809443d84d043992e632.bindPopup(popup_e1069ae7ad3c7159d4e2b93f5ec668ce)
+        ;
+
+        
+    
+    
+            var circle_c1e31b2c18911a59394a330c7652d17b = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_2f06ff61bf6bfcdf15e730944e1063cd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_66ea9bdd0e4f9a5e59ac2c28cdc1dcb7 = $(`<div id="html_66ea9bdd0e4f9a5e59ac2c28cdc1dcb7" style="width: 100.0%; height: 100.0%;">8 km</div>`)[0];
+            popup_2f06ff61bf6bfcdf15e730944e1063cd.setContent(html_66ea9bdd0e4f9a5e59ac2c28cdc1dcb7);
+        
+
+        circle_c1e31b2c18911a59394a330c7652d17b.bindPopup(popup_2f06ff61bf6bfcdf15e730944e1063cd)
+        ;
+
+        
+    
+    
+            var circle_3eda4cc74ecc6830f217e3a06b492a0d = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_14a2f703090cd66cf10a0b70fe9a655e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f83b57423a385d4a3cfe1b8fa428388e = $(`<div id="html_f83b57423a385d4a3cfe1b8fa428388e" style="width: 100.0%; height: 100.0%;">9 km</div>`)[0];
+            popup_14a2f703090cd66cf10a0b70fe9a655e.setContent(html_f83b57423a385d4a3cfe1b8fa428388e);
+        
+
+        circle_3eda4cc74ecc6830f217e3a06b492a0d.bindPopup(popup_14a2f703090cd66cf10a0b70fe9a655e)
+        ;
+
+        
+    
+    
+            var circle_1b3fd4cf1753737ca0f16b1017cdc94b = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_6a695f1f5a5c63456e0794811db1c4a3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2419a1d8d32fc094d4b2fd19e4ad840 = $(`<div id="html_c2419a1d8d32fc094d4b2fd19e4ad840" style="width: 100.0%; height: 100.0%;">10 km</div>`)[0];
+            popup_6a695f1f5a5c63456e0794811db1c4a3.setContent(html_c2419a1d8d32fc094d4b2fd19e4ad840);
+        
+
+        circle_1b3fd4cf1753737ca0f16b1017cdc94b.bindPopup(popup_6a695f1f5a5c63456e0794811db1c4a3)
+        ;
+
+        
+    
+    
+            var circle_95f6927cd54cbb382e95d21655506a8e = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_f91e6e6d8ed2f9d66a084f3f2bdb7198 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ee58a2625e4654b9e380495ff92414a7 = $(`<div id="html_ee58a2625e4654b9e380495ff92414a7" style="width: 100.0%; height: 100.0%;">11 km</div>`)[0];
+            popup_f91e6e6d8ed2f9d66a084f3f2bdb7198.setContent(html_ee58a2625e4654b9e380495ff92414a7);
+        
+
+        circle_95f6927cd54cbb382e95d21655506a8e.bindPopup(popup_f91e6e6d8ed2f9d66a084f3f2bdb7198)
+        ;
+
+        
+    
+    
+            var circle_dd2daab7802697e6cf64aba110c81414 = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_4396d6b6b0fe6eb8c871f358533a7618 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70f91e074f7e434a21964813e31166ff = $(`<div id="html_70f91e074f7e434a21964813e31166ff" style="width: 100.0%; height: 100.0%;">12 km</div>`)[0];
+            popup_4396d6b6b0fe6eb8c871f358533a7618.setContent(html_70f91e074f7e434a21964813e31166ff);
+        
+
+        circle_dd2daab7802697e6cf64aba110c81414.bindPopup(popup_4396d6b6b0fe6eb8c871f358533a7618)
+        ;
+
+        
+    
+    
+            var circle_5b7d3d740f1609bf1e90af64f1e2da60 = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_cab11c222296faf039d87ab20a36d65c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_585ce2c7cf91e1028a3099fd726471af = $(`<div id="html_585ce2c7cf91e1028a3099fd726471af" style="width: 100.0%; height: 100.0%;">13 km</div>`)[0];
+            popup_cab11c222296faf039d87ab20a36d65c.setContent(html_585ce2c7cf91e1028a3099fd726471af);
+        
+
+        circle_5b7d3d740f1609bf1e90af64f1e2da60.bindPopup(popup_cab11c222296faf039d87ab20a36d65c)
+        ;
+
+        
+    
+    
+            var circle_f349a947addbd4e449d648c3ae1f3ffd = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_5429140cef2600d69d40ce95a55a0aec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c96117e813c84508e87f322f16f32b73 = $(`<div id="html_c96117e813c84508e87f322f16f32b73" style="width: 100.0%; height: 100.0%;">14 km</div>`)[0];
+            popup_5429140cef2600d69d40ce95a55a0aec.setContent(html_c96117e813c84508e87f322f16f32b73);
+        
+
+        circle_f349a947addbd4e449d648c3ae1f3ffd.bindPopup(popup_5429140cef2600d69d40ce95a55a0aec)
+        ;
+
+        
+    
+    
+            var circle_39a0887e7376bc97613281daa3aebdef = L.circle(
+                [36.275555555555556, 23.015],
+                {"bubblingMouseEvents": true, "color": "cyan", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "cyan", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15000, "stroke": true, "weight": 1}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+        var popup_f83395993393abf125a204e737c40867 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8c615d179279fa647b73c817327c6e14 = $(`<div id="html_8c615d179279fa647b73c817327c6e14" style="width: 100.0%; height: 100.0%;">15 km</div>`)[0];
+            popup_f83395993393abf125a204e737c40867.setContent(html_8c615d179279fa647b73c817327c6e14);
+        
+
+        circle_39a0887e7376bc97613281daa3aebdef.bindPopup(popup_f83395993393abf125a204e737c40867)
+        ;
+
+        
+    
+    
+            var marker_6e09119d59529db8608553f311d2f0cb = L.marker(
+                [36.275555555555556, 23.015],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_4bfacddb0f19e0d63ecb38034f5112e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e09119d59529db8608553f311d2f0cb.setIcon(icon_4bfacddb0f19e0d63ecb38034f5112e9);
+        
+    
+        var popup_6191bd4026decab1cf9359a656afc9ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33a2bfc611fb6869d063e7e2d93a3276 = $(`<div id="html_33a2bfc611fb6869d063e7e2d93a3276" style="width: 100.0%; height: 100.0%;">ΣΤΑΘΜΟΣ</div>`)[0];
+            popup_6191bd4026decab1cf9359a656afc9ca.setContent(html_33a2bfc611fb6869d063e7e2d93a3276);
+        
+
+        marker_6e09119d59529db8608553f311d2f0cb.bindPopup(popup_6191bd4026decab1cf9359a656afc9ca)
+        ;
+
+        
+    
+    
+            var marker_bdebe545fec52576d69b70aa216a23d8 = L.marker(
+                [36.279444, 23.02],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_aaac53eb3dc101e301ecc43e6ce0c8d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bdebe545fec52576d69b70aa216a23d8.setIcon(icon_aaac53eb3dc101e301ecc43e6ce0c8d7);
+        
+    
+        var popup_d2b0f7c1968b0cdec1dfd2cd29ed9c16 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1e793e94e19557ba889e9f771ffbd20 = $(`<div id="html_f1e793e94e19557ba889e9f771ffbd20" style="width: 100.0%; height: 100.0%;">RWY20<br>Απόσταση: 0.623 km</div>`)[0];
+            popup_d2b0f7c1968b0cdec1dfd2cd29ed9c16.setContent(html_f1e793e94e19557ba889e9f771ffbd20);
+        
+
+        marker_bdebe545fec52576d69b70aa216a23d8.bindPopup(popup_d2b0f7c1968b0cdec1dfd2cd29ed9c16)
+        ;
+
+        
+    
+    
+            var marker_5ac71a007ae8804d851f288d23557faf = L.marker(
+                [36.268056, 23.013056],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_96095ed172205752e05a577ace14def1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5ac71a007ae8804d851f288d23557faf.setIcon(icon_96095ed172205752e05a577ace14def1);
+        
+    
+        var popup_e8171b7901aa529ee1d0b521a934ee76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4b9fb1152d80cf855a637c31ce81d5f = $(`<div id="html_e4b9fb1152d80cf855a637c31ce81d5f" style="width: 100.0%; height: 100.0%;">RWY02<br>Απόσταση: 0.85 km</div>`)[0];
+            popup_e8171b7901aa529ee1d0b521a934ee76.setContent(html_e4b9fb1152d80cf855a637c31ce81d5f);
+        
+
+        marker_5ac71a007ae8804d851f288d23557faf.bindPopup(popup_e8171b7901aa529ee1d0b521a934ee76)
+        ;
+
+        
+    
+    
+            var marker_4b0992145e3698a65138ded1c52be994 = L.marker(
+                [36.275833, 23.005278],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_d2cf7418e0e9a856bf5e2626415c7370 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4b0992145e3698a65138ded1c52be994.setIcon(icon_d2cf7418e0e9a856bf5e2626415c7370);
+        
+    
+        var popup_b4ff38e037ccbb077257416161c72ab9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3447ff2e0a28e71d3e09c4504e0e7394 = $(`<div id="html_3447ff2e0a28e71d3e09c4504e0e7394" style="width: 100.0%; height: 100.0%;">ΛΟΦΟΣ ΔΥΤΙΚΑ<br>Απόσταση: 0.874 km</div>`)[0];
+            popup_b4ff38e037ccbb077257416161c72ab9.setContent(html_3447ff2e0a28e71d3e09c4504e0e7394);
+        
+
+        marker_4b0992145e3698a65138ded1c52be994.bindPopup(popup_b4ff38e037ccbb077257416161c72ab9)
+        ;
+
+        
+    
+    
+            var marker_568d1eb7e3f6a29acc4007035a6af38a = L.marker(
+                [36.264167, 23.009167],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_1307bcc7aa259d428dcfa4a69639a6da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_568d1eb7e3f6a29acc4007035a6af38a.setIcon(icon_1307bcc7aa259d428dcfa4a69639a6da);
+        
+    
+        var popup_a8d7c85bd6f0ed12faeb5ca7ab80c6d5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ea65062ac14b285c8669ed3fb7b3136c = $(`<div id="html_ea65062ac14b285c8669ed3fb7b3136c" style="width: 100.0%; height: 100.0%;">1ο Φως Εμποδίων<br>Απόσταση: 1.368 km</div>`)[0];
+            popup_a8d7c85bd6f0ed12faeb5ca7ab80c6d5.setContent(html_ea65062ac14b285c8669ed3fb7b3136c);
+        
+
+        marker_568d1eb7e3f6a29acc4007035a6af38a.bindPopup(popup_a8d7c85bd6f0ed12faeb5ca7ab80c6d5)
+        ;
+
+        
+    
+    
+            var marker_aa4f3690e0d7afcbb96b4adb32449827 = L.marker(
+                [36.288056, 23.021944],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_e8d6d47bc94f57cfe2af4f75e4eb5769 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_aa4f3690e0d7afcbb96b4adb32449827.setIcon(icon_e8d6d47bc94f57cfe2af4f75e4eb5769);
+        
+    
+        var popup_11a773dadf0761faae4b26d0cca7f316 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cdd252c863b09530482fcb3e2a96ca56 = $(`<div id="html_cdd252c863b09530482fcb3e2a96ca56" style="width: 100.0%; height: 100.0%;">ΛΟΦΟΣ ΒΟΡΕΙΑ<br>Απόσταση: 1.521 km</div>`)[0];
+            popup_11a773dadf0761faae4b26d0cca7f316.setContent(html_cdd252c863b09530482fcb3e2a96ca56);
+        
+
+        marker_aa4f3690e0d7afcbb96b4adb32449827.bindPopup(popup_11a773dadf0761faae4b26d0cca7f316)
+        ;
+
+        
+    
+    
+            var marker_ccee32cafeb9518ad8aa3c83a24f3a3e = L.marker(
+                [36.266944, 22.999722],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_2f2f3ca570349ff926e4aec4b38188df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ccee32cafeb9518ad8aa3c83a24f3a3e.setIcon(icon_2f2f3ca570349ff926e4aec4b38188df);
+        
+    
+        var popup_de7376e7d99fd67f52be2e3303b37c11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a298e986d0a863b172ecdaa5e1a1af40 = $(`<div id="html_a298e986d0a863b172ecdaa5e1a1af40" style="width: 100.0%; height: 100.0%;">ΕΡΓΟΣΤΑΣΙΟ<br>Απόσταση: 1.673 km</div>`)[0];
+            popup_de7376e7d99fd67f52be2e3303b37c11.setContent(html_a298e986d0a863b172ecdaa5e1a1af40);
+        
+
+        marker_ccee32cafeb9518ad8aa3c83a24f3a3e.bindPopup(popup_de7376e7d99fd67f52be2e3303b37c11)
+        ;
+
+        
+    
+    
+            var marker_567a2b937c5a58ae39d0ef62be75ce1c = L.marker(
+                [36.278611, 23.035833],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_bdb7a0ea84cbc9f274723a2314897e31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_567a2b937c5a58ae39d0ef62be75ce1c.setIcon(icon_bdb7a0ea84cbc9f274723a2314897e31);
+        
+    
+        var popup_9cf3c106e392a35f9e27d266cd100d35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df1306b2e88d1abcc392f5543cab4038 = $(`<div id="html_df1306b2e88d1abcc392f5543cab4038" style="width: 100.0%; height: 100.0%;">ΚΟΥΤΣΟΚΕΦΑΛΟ<br>Απόσταση: 1.902 km</div>`)[0];
+            popup_9cf3c106e392a35f9e27d266cd100d35.setContent(html_df1306b2e88d1abcc392f5543cab4038);
+        
+
+        marker_567a2b937c5a58ae39d0ef62be75ce1c.bindPopup(popup_9cf3c106e392a35f9e27d266cd100d35)
+        ;
+
+        
+    
+    
+            var marker_674909dcdde60e27c68fbb7976906cbf = L.marker(
+                [36.271944, 23.040833],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_4b9a2de3ee0ce5eab4dbef03da9328d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_674909dcdde60e27c68fbb7976906cbf.setIcon(icon_4b9a2de3ee0ce5eab4dbef03da9328d2);
+        
+    
+        var popup_6e538df7e0729a05b23a0b1be972bc2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6b1235b5439a9e8e67ad58774b9d2eb5 = $(`<div id="html_6b1235b5439a9e8e67ad58774b9d2eb5" style="width: 100.0%; height: 100.0%;">ΛΟΦΟΣ ΑΝΑΤΟΛΙΚΑ<br>Απόσταση: 2.355 km</div>`)[0];
+            popup_6e538df7e0729a05b23a0b1be972bc2d.setContent(html_6b1235b5439a9e8e67ad58774b9d2eb5);
+        
+
+        marker_674909dcdde60e27c68fbb7976906cbf.bindPopup(popup_6e538df7e0729a05b23a0b1be972bc2d)
+        ;
+
+        
+    
+    
+            var marker_5a972e41e474796503a7411d66a72b31 = L.marker(
+                [36.259167, 22.997222],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_ddf070de8413b62644ec0760d05df365 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5a972e41e474796503a7411d66a72b31.setIcon(icon_ddf070de8413b62644ec0760d05df365);
+        
+    
+        var popup_db21610a2c2e4ce2c7bf08f2adc8833d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3ea48c517b8a0e40a4ddec17f4a8453d = $(`<div id="html_3ea48c517b8a0e40a4ddec17f4a8453d" style="width: 100.0%; height: 100.0%;">ΛΟΦΟΣ ΝΟΤΙΑ (ΜΗΤΑΤΑ)<br>Απόσταση: 2.421 km</div>`)[0];
+            popup_db21610a2c2e4ce2c7bf08f2adc8833d.setContent(html_3ea48c517b8a0e40a4ddec17f4a8453d);
+        
+
+        marker_5a972e41e474796503a7411d66a72b31.bindPopup(popup_db21610a2c2e4ce2c7bf08f2adc8833d)
+        ;
+
+        
+    
+    
+            var marker_3e6a805594e96ada7358e0e9ee6700b4 = L.marker(
+                [36.265278, 23.046667],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_679006e258d1afbc60e6aaf51d531162 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e6a805594e96ada7358e0e9ee6700b4.setIcon(icon_679006e258d1afbc60e6aaf51d531162);
+        
+    
+        var popup_cc93ff39a06cc70c995f3fa6a25be694 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc8ac6efadcd0aec88f293c4196d3608 = $(`<div id="html_cc8ac6efadcd0aec88f293c4196d3608" style="width: 100.0%; height: 100.0%;">ΔΙΓΕΝΗΣ<br>Απόσταση: 3.065 km</div>`)[0];
+            popup_cc93ff39a06cc70c995f3fa6a25be694.setContent(html_cc8ac6efadcd0aec88f293c4196d3608);
+        
+
+        marker_3e6a805594e96ada7358e0e9ee6700b4.bindPopup(popup_cc93ff39a06cc70c995f3fa6a25be694)
+        ;
+
+        
+    
+    
+            var marker_6eccc88cc90024936dd977838f435d71 = L.marker(
+                [36.261389, 22.973056],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_d518ce5427bcabc97b5ed678e7c7b3ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6eccc88cc90024936dd977838f435d71.setIcon(icon_d518ce5427bcabc97b5ed678e7c7b3ad);
+        
+    
+        var popup_2d70bc76b47de56aa9960a1e329f89a9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bf19439e752baa4f99a4170d09f987c7 = $(`<div id="html_bf19439e752baa4f99a4170d09f987c7" style="width: 100.0%; height: 100.0%;">ΑΛΟΙΖΙΑΝΙΚΑ<br>Απόσταση: 4.084 km</div>`)[0];
+            popup_2d70bc76b47de56aa9960a1e329f89a9.setContent(html_bf19439e752baa4f99a4170d09f987c7);
+        
+
+        marker_6eccc88cc90024936dd977838f435d71.bindPopup(popup_2d70bc76b47de56aa9960a1e329f89a9)
+        ;
+
+        
+    
+    
+            var marker_d2d13c7b258552ee7c590becd8dc8aeb = L.marker(
+                [36.297778, 22.976944],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_1cee0c4e2f6409c978fc37fa2dfca3c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d2d13c7b258552ee7c590becd8dc8aeb.setIcon(icon_1cee0c4e2f6409c978fc37fa2dfca3c8);
+        
+    
+        var popup_6298eb93201d70ed0b36c8b427435aba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8d9d8884eae00066eaac005c455237b = $(`<div id="html_c8d9d8884eae00066eaac005c455237b" style="width: 100.0%; height: 100.0%;">ΤΡΙΦΥΛΛΙΑΝΙΚΑ<br>Απόσταση: 4.215 km</div>`)[0];
+            popup_6298eb93201d70ed0b36c8b427435aba.setContent(html_c8d9d8884eae00066eaac005c455237b);
+        
+
+        marker_d2d13c7b258552ee7c590becd8dc8aeb.bindPopup(popup_6298eb93201d70ed0b36c8b427435aba)
+        ;
+
+        
+    
+    
+            var marker_2ceca10d320c65c09bb2e0ce3da4804a = L.marker(
+                [36.248611, 22.978611],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_96f3376a8537a95804c4444eda1760c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2ceca10d320c65c09bb2e0ce3da4804a.setIcon(icon_96f3376a8537a95804c4444eda1760c8);
+        
+    
+        var popup_b4e44adaebcd8b5310ea4ae662f14089 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_657ccf529394e57ef83410f072742e48 = $(`<div id="html_657ccf529394e57ef83410f072742e48" style="width: 100.0%; height: 100.0%;">ΔΡΥΜΩΝΑΡΙ<br>Απόσταση: 4.431 km</div>`)[0];
+            popup_b4e44adaebcd8b5310ea4ae662f14089.setContent(html_657ccf529394e57ef83410f072742e48);
+        
+
+        marker_2ceca10d320c65c09bb2e0ce3da4804a.bindPopup(popup_b4e44adaebcd8b5310ea4ae662f14089)
+        ;
+
+        
+    
+    
+            var marker_7a052599e00c9e98a7ea5f24b3997298 = L.marker(
+                [36.256111, 23.062222],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_77da2e1c5800281a82311f37a14c678c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7a052599e00c9e98a7ea5f24b3997298.setIcon(icon_77da2e1c5800281a82311f37a14c678c);
+        
+    
+        var popup_1e176d90a7eb3cb5ab34b8f896c1f135 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6545fc033670fe3ef098bdde3b8e939a = $(`<div id="html_6545fc033670fe3ef098bdde3b8e939a" style="width: 100.0%; height: 100.0%;">ΑΓΙΑ ΜΟΝΗ<br>Απόσταση: 4.76 km</div>`)[0];
+            popup_1e176d90a7eb3cb5ab34b8f896c1f135.setContent(html_6545fc033670fe3ef098bdde3b8e939a);
+        
+
+        marker_7a052599e00c9e98a7ea5f24b3997298.bindPopup(popup_1e176d90a7eb3cb5ab34b8f896c1f135)
+        ;
+
+        
+    
+    
+            var marker_514678b4cd9356154f45081ab83d0708 = L.marker(
+                [36.263056, 22.963333],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_0ce31724ecd7bf0d46a26b1bc952be26 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_514678b4cd9356154f45081ab83d0708.setIcon(icon_0ce31724ecd7bf0d46a26b1bc952be26);
+        
+    
+        var popup_7d6120bfe949f00a5686093fe9693f4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c64ef0c257acc7cf8ea613d3f89b199b = $(`<div id="html_c64ef0c257acc7cf8ea613d3f89b199b" style="width: 100.0%; height: 100.0%;">ΣΚΛΗΡΗ<br>Απόσταση: 4.845 km</div>`)[0];
+            popup_7d6120bfe949f00a5686093fe9693f4d.setContent(html_c64ef0c257acc7cf8ea613d3f89b199b);
+        
+
+        marker_514678b4cd9356154f45081ab83d0708.bindPopup(popup_7d6120bfe949f00a5686093fe9693f4d)
+        ;
+
+        
+    
+    
+            var marker_51d58c4c2533a0ec93c7bb31b4f5dda1 = L.marker(
+                [36.3, 22.959722],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_c6b8a2a035e5d867c4034ef8aeb4678c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_51d58c4c2533a0ec93c7bb31b4f5dda1.setIcon(icon_c6b8a2a035e5d867c4034ef8aeb4678c);
+        
+    
+        var popup_f813f412919c4888ff9542437fa209f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_daeafba6c00d2fdf1d5b75a81d794199 = $(`<div id="html_daeafba6c00d2fdf1d5b75a81d794199" style="width: 100.0%; height: 100.0%;">ΠΟΤΑΜΟΣ<br>Απόσταση: 5.658 km</div>`)[0];
+            popup_f813f412919c4888ff9542437fa209f4.setContent(html_daeafba6c00d2fdf1d5b75a81d794199);
+        
+
+        marker_51d58c4c2533a0ec93c7bb31b4f5dda1.bindPopup(popup_f813f412919c4888ff9542437fa209f4)
+        ;
+
+        
+    
+    
+            var marker_7bc26761d4774e8f450bbe8444aa6d75 = L.marker(
+                [36.240278, 23.085833],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_ff427342d2f20754dff8098bd5f6857f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7bc26761d4774e8f450bbe8444aa6d75.setIcon(icon_ff427342d2f20754dff8098bd5f6857f);
+        
+    
+        var popup_c3c74eddedd7a58ead633dafee5d3074 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0768797f6c39cb534c0248cacf6f695a = $(`<div id="html_0768797f6c39cb534c0248cacf6f695a" style="width: 100.0%; height: 100.0%;">ΑΓΙΟΣ ΓΕΩΡΓΙΟΣ<br>Απόσταση: 7.473 km</div>`)[0];
+            popup_c3c74eddedd7a58ead633dafee5d3074.setContent(html_0768797f6c39cb534c0248cacf6f695a);
+        
+
+        marker_7bc26761d4774e8f450bbe8444aa6d75.bindPopup(popup_c3c74eddedd7a58ead633dafee5d3074)
+        ;
+
+        
+    
+    
+            var marker_6478c9daed0a13d095f0bb59ff920888 = L.marker(
+                [36.2275, 22.940556],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_cb96c6651a49db7a1b39533c1e622b38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6478c9daed0a13d095f0bb59ff920888.setIcon(icon_cb96c6651a49db7a1b39533c1e622b38);
+        
+    
+        var popup_f3e641d78ec9d1788d4e086441d6df11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86c7c03383629c120721ede58dc7b7aa = $(`<div id="html_86c7c03383629c120721ede58dc7b7aa" style="width: 100.0%; height: 100.0%;">ΜΕΡΜΗΓΚΑΡΗΣ<br>Απόσταση: 8.556 km</div>`)[0];
+            popup_f3e641d78ec9d1788d4e086441d6df11.setContent(html_86c7c03383629c120721ede58dc7b7aa);
+        
+
+        marker_6478c9daed0a13d095f0bb59ff920888.bindPopup(popup_f3e641d78ec9d1788d4e086441d6df11)
+        ;
+
+        
+    
+    
+            var marker_279054eeddafb5f8d1d44f70310f92fc = L.marker(
+                [36.333889, 22.931389],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_988691e5f53daeba9d90636e8ab4bfe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_279054eeddafb5f8d1d44f70310f92fc.setIcon(icon_988691e5f53daeba9d90636e8ab4bfe8);
+        
+    
+        var popup_946413c1f02cb7a77852327425876812 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_423ab73777ae9af47b68f076ec452323 = $(`<div id="html_423ab73777ae9af47b68f076ec452323" style="width: 100.0%; height: 100.0%;">ΓΕΡΑΚΑΡΙ<br>Απόσταση: 9.914 km</div>`)[0];
+            popup_946413c1f02cb7a77852327425876812.setContent(html_423ab73777ae9af47b68f076ec452323);
+        
+
+        marker_279054eeddafb5f8d1d44f70310f92fc.bindPopup(popup_946413c1f02cb7a77852327425876812)
+        ;
+
+        
+    
+    
+            var marker_1aaf91a04962101e07d721a011601c5c = L.marker(
+                [36.179722, 23.035],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_b0f91ab3b4e9bae9fd3a3a48b9185d1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1aaf91a04962101e07d721a011601c5c.setIcon(icon_b0f91ab3b4e9bae9fd3a3a48b9185d1f);
+        
+    
+        var popup_d20c527a61ef73fc7fdd31e3c2b77909 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2d6598d14b596bc450dcfe2e0413614 = $(`<div id="html_c2d6598d14b596bc450dcfe2e0413614" style="width: 100.0%; height: 100.0%;">ΚΑΛΑΜΟΣ<br>Απόσταση: 10.785 km</div>`)[0];
+            popup_d20c527a61ef73fc7fdd31e3c2b77909.setContent(html_c2d6598d14b596bc450dcfe2e0413614);
+        
+
+        marker_1aaf91a04962101e07d721a011601c5c.bindPopup(popup_d20c527a61ef73fc7fdd31e3c2b77909)
+        ;
+
+        
+    
+    
+            var marker_7f41cfb3f3ab9255a7a36c70cec94a73 = L.marker(
+                [36.1875, 22.949722],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_eba0f87bae4269226176a528d843de90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7f41cfb3f3ab9255a7a36c70cec94a73.setIcon(icon_eba0f87bae4269226176a528d843de90);
+        
+    
+        var popup_9cc4d5416d48465eb633cb7489200b57 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e847adeab1d511905b76bcbcb06b6310 = $(`<div id="html_e847adeab1d511905b76bcbcb06b6310" style="width: 100.0%; height: 100.0%;">ΟΡΟΣ ΒΙΓΛΑ (496ft)<br>Απόσταση: 11.398 km</div>`)[0];
+            popup_9cc4d5416d48465eb633cb7489200b57.setContent(html_e847adeab1d511905b76bcbcb06b6310);
+        
+
+        marker_7f41cfb3f3ab9255a7a36c70cec94a73.bindPopup(popup_9cc4d5416d48465eb633cb7489200b57)
+        ;
+
+        
+    
+    
+            var marker_2f1843391c0b84078396a379f1279895 = L.marker(
+                [36.164722, 22.969444],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_8c10d4b24ff9a3f2ffe50e1c16a25782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f1843391c0b84078396a379f1279895.setIcon(icon_8c10d4b24ff9a3f2ffe50e1c16a25782);
+        
+    
+        var popup_30428d1f87ddcc5985c8e3a9eba1640d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fdc922e7e20043c76d52bbef97f5e302 = $(`<div id="html_fdc922e7e20043c76d52bbef97f5e302" style="width: 100.0%; height: 100.0%;">ΑΓΙΑ ΕΛΕΣΑ (490FT)<br>Απόσταση: 12.963 km</div>`)[0];
+            popup_30428d1f87ddcc5985c8e3a9eba1640d.setContent(html_fdc922e7e20043c76d52bbef97f5e302);
+        
+
+        marker_2f1843391c0b84078396a379f1279895.bindPopup(popup_30428d1f87ddcc5985c8e3a9eba1640d)
+        ;
+
+        
+    
+    
+            var marker_75095d5c84ab89829e4dba75e80acce9 = L.marker(
+                [36.380833, 22.95],
+                {}
+            ).addTo(map_7ad19df14c040bbd83bf509d0a914825);
+        
+    
+            var icon_70bdb096375fdc509bbe965ebf5d4a72 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_75095d5c84ab89829e4dba75e80acce9.setIcon(icon_70bdb096375fdc509bbe965ebf5d4a72);
+        
+    
+        var popup_1c40d16b6e111a1af6a8609f13890b9a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e46a555680adae50c3e004c86a8d05b1 = $(`<div id="html_e46a555680adae50c3e004c86a8d05b1" style="width: 100.0%; height: 100.0%;">ΦΑΡΟΣ<br>Απόσταση: 13.059 km</div>`)[0];
+            popup_1c40d16b6e111a1af6a8609f13890b9a.setContent(html_e46a555680adae50c3e004c86a8d05b1);
+        
+
+        marker_75095d5c84ab89829e4dba75e80acce9.bindPopup(popup_1c40d16b6e111a1af6a8609f13890b9a)
+        ;
+
+        
+    
+</script>
+</html>
